@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario DOM</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #ffd5f8;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Formulario Practica 4</h2>
+<form id="form">
+    <input type="text" id="nombre" placeholder="Nombre" required>
+    <input type="text" id="apellido" placeholder="Apellido" required>
+    <input type="text" id="matricula" placeholder="Matrícula" required>
+    <input type="text" id="nota" placeholder="Nota" required>
+    <button type="button" onclick="agregarFila()">Agregar</button>
+    <button type="button" onclick="actualizarFila()">Actualizar</button>
+</form>
+
+<h2>Tabla de Estudiantes</h2>
+<table id="tabla">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Matrícula</th>
+            <th>Nota</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody id="tbody">
+    </tbody>
+</table>
+
+<script src="script.js"></script>
+</body>
+</html>
